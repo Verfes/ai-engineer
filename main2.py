@@ -272,9 +272,8 @@ def chat_with_gpt4(user_input):
     
     # Make the initial API call
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=messages,
-        max_tokens=4000,
         tools=tools
     )
     
